@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meet Our Trainers - Rue's Fitness Gym</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+	
+	    body {
+	      margin: 0;
+         padding: 0;
+         font-family:'Segoe UI', sans-serif;
+         color: white;
+         position: relative;
+         min-height: 100vh;
+      }
+
+       .navbar-brand img {
+          width: 70px;
+      }
+
+        body::before {
+          content: "";
+          position: fixed;
+          top: 0; left: 0;
+          width: 100%;
+          height: 100%;
+          background: url('https://th.bing.com/th/id/OIP.Jrr_vMFGSBBRHvsbHPZChQHaEJ?rs=1&pid=ImgDetMain'); no-repeat center center/cover;
+          z-index: -1;
+          filter: brightness(0.4);
+       }
+ 	     
+        .hero {
+            text-align: center;
+           padding: 50px 20px;
+        }
+
+        .trainers-section {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+
+         .trainer-card {
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            width: 350px;
+            transition: transform 0.3s ease-in-out;
+            font-size: 16px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+			color:#222;
+			
+        }
+
+        .trainer-card:hover {
+            transform: scale(1.05);
+        }
+
+        .trainer-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+		.hero h1 {
+            font-size: 3rem;
+            color: #f7c200;
+        
+		}
+        .trainer-card h3 {
+            font-size: 39px;
+            color: gray; 
+            margin-top: 15px;
+        }
+
+        .trainer-card p {
+            font-size: 20px;
+            color: black;
+            margin: 8px 0;
+        }
+
+        .trainer-card .btn {
+            display: inline-block;
+            background: gray;
+            color: black;
+            padding: 10px 15px;
+            margin-top: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .trainer-card .btn:hover {
+            background: #222;
+        }
+
+        footer {
+            background: black;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdvcmtvdXR8ZW58MHx8MHx8fDA%3D" alt="Logo">
+        <span class="ms-2 fw-bold fs-4 text-white">RUE'S FITNESS GYM</span>
+      </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+				    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="hero">
+        <div>
+            <h1>MEET OUR TRAINERS</h1>
+            <p>Professional coaches ready to help you achieve your fitness goals</p>
+        </div>
+    </header>
+
+    <section class="trainers-section">
+        <div class="trainer-card">
+            <img src="https://media.istockphoto.com/id/1860710155/photo/fitness-instructor-lunging-forward-with-dumb-bells-in-gym.webp?a=1&b=1&s=612x612&w=0&k=20&c=xNUG-g0HIWfTlYzZWDfYtFN1W-R7dza4EdAyWhO27cc=" alt="Mikah Doe">
+            <h3>RUE MORE</h3>
+			<p><strong>Expertise:</strong> Strength & Conditioning</p>
+            <p><strong>Certifications:</strong> NASM Certified, Olympic Weightlifting Specialist</p>
+            <p><strong>Experience:</strong> 10+ years in bodybuilding and strength training.</p>
+            <p>Rue has trained top athletes and bodybuilders, focusing on powerlifting and muscle growth.</p>
+            <a href="signup.html" class="btn">Train with Rue</a>
+            
+        </div>
+
+        <div class="trainer-card">
+            <img src="https://plus.unsplash.com/premium_photo-1663089294463-8d780848cc68?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2FyZGlvJTIwYW5kJTIwaGl0JTIwdHJhaW5lcnMlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D" alt="Rue More">
+            <h3>JOHN DOE</h3>
+			<p><strong>Expertise:</strong> Cardio & HIIT</p>
+            <p><strong>Certifications:</strong> ACE Certified, HIIT Master Trainer</p>
+            <p><strong>Experience:</strong> 8+ years in endurance coaching and weight loss.</p>
+            <p>John specializes in high-intensity workouts, helping clients burn fat and boost stamina.</p>
+            <a href="signup.html" class="btn">Train with John</a>
+            
+        </div>
+
+        <div class="trainer-card">
+            <img src="https://plus.unsplash.com/premium_photo-1661603409776-d67c43bb6f60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBlcnNvbmFsJTIwdHJhaW5lcnMlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D" alt="Jessica Hon">
+            <h3>JESSICA HON</h3>
+			<p><strong>Expertise:</strong> Personal Training & Nutrition</p>
+            <p><strong>Certifications:</strong> ISSA Certified, Precision Nutrition Coach</p>
+            <p><strong>Experience:</strong> 12+ years in personalized coaching.</p>
+            <p>Jessica creates custom workout and diet plans to help clients reach their fitness goals.</p>
+            <a href="signup.html" class="btn">Train with Jessica</a>
+            
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Rue's Fitness. All Rights Reserved.</p>
+      <div class="d-flex justify-content-center">
+        <a href="#" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
