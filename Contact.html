@@ -1,12 +1,186 @@
-<!doctype html>
-<html>
- <head>
-   <title>Rue's Fitness Gym</title>
-  </head>
- <body>
-  <h1>Contact</h1>
-   <p>Contact our offices on +267 75349747</p>
-   <p>Send us an email at rue'sfitnessgym.gmail.com</p>
-   <p>Also come to visit us in person in Mogoditshane Bodiba mall,health center street 123</p>
- </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Rue's Fitness Gym</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+
+  <style>
+  
+    body {
+	margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', sans-serif;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .navbar-brand img {
+    width: 70px;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://th.bing.com/th/id/OIP.Jrr_vMFGSBBRHvsbHPZChQHaEJ?rs=1&pid=ImgDetMain'); no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(0.4);
+  }
+    
+    .hero {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      color:#f7c200; 
+    }
+    label {
+      color: #f7c200;
+    }
+    h3.text-warning, h4.text-warning {
+       color: #34495e;
+    }
+    .btn-warning {
+        background-color: #f7c200;
+        border: none;
+   }
+   .btn-warning:hover {
+        background-color: #163b45;
+    }
+
+
+    .contact-info, .contact-form {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 40px;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      border: 1px solid white;
+      padding: 10px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdvcmtvdXR8ZW58MHx8MHx8fDA%3D" alt="Logo">
+        <span class="ms-2 fw-bold fs-4 text-white">RUE'S FITNESS GYM</span>
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p class="lead">We're here to help you get started on your fitness journey</p>
+  </section>
+
+  <div class="container">
+    <div class="row text-white">
+      
+      <div class="col-md-6 contact-info">
+        <h3 class="text-warning">📍 OUR LOCATION</h3>
+        <p>Mogoditshane, Bodipa Mall</p>
+        <p>Fourth Floor, Street 123 Malepa Road</p>
+
+        <h4 class="text-warning mt-4">📞 CALL US</h4>
+        <p>+267 71234567</p>
+		<p>WhatsApp:+267 74696815</p>
+
+        <h4 class="text-warning mt-4">📧 EMAIL</h4>
+		<p>
+        <a href="mailto:contact@ruesfitness.bw" style="color: white; text-decoration: underline;">
+         contact@ruesfitness.bw
+        </a>
+        </p>
+        <h4 class="text-warning mt-4">🕐 WORKING HOURS</h4>
+        <p>Monday – Saturday: 5am – 9pm</p>
+        <p>Sunday: 6am – 6pm</p>
+      </div>
+
+      <div class="col-md-6 contact-form">
+        <h3 class="text-warning">💬 Send Us a Message</h3>
+        <form>
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="How can we help?" required></textarea>
+
+          <button class="btn btn-warning mt-3 w-100">Send Message</button>
+        </form>
+      </div>
+	  <div class="row mt-4">
+  <div class="col-12">
+    <div class="map-container" style="border-radius: 10px; overflow: hidden;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.691038452147!2d25.86981931524659!3d-24.62820778418286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb40a343f69e77%3A0x1bc2431a597faaf4!2sBodipa%20Mall!5e0!3m2!1sen!2sbw!4v1713110042304!5m2!1sen!2sbw"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+  <footer class="footer bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Rue's Fitness. All Rights Reserved.</p>
+      <div class="d-flex justify-content-center">
+        <a href="#" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="btn btn-outline-light btn-social mx-1"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
